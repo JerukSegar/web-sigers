@@ -1,0 +1,31 @@
+.home-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.member-list {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.member-row {
+  display: flex;
+}
+
+/* desktop zigzag */
+.member-row.left {
+  justify-content: flex-start;
+}
+
+.member-row.right {
+  justify-content: flex-end;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .member-row {
+    justify-content: center !important;
+  }
+}
