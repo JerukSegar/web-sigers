@@ -4,7 +4,7 @@ function MemberCard({ member }) {
       <img
         src={member.foto}
         alt={member.nama}
-        className="w-full h-52 object-cover rounded-xl mb-4"
+        className="w-full h-64 object-contain bg-black rounded-xl mb-4"
       />
 
       <h2 className="text-2xl font-semibold mb-2">{member.nama}</h2>
