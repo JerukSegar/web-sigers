@@ -6,7 +6,8 @@ const members = [
         ulangTahun: "gk tau nigger",
         kelebihan: "Ngaloco jomok",
         kekurangan: "hamilin anak orang",
-        badge: ["🔥 King of Jomok"]
+        badge: ["🔥 King of Jomok"],
+        instagram: "https://instagram.com/username_budi"
     },
     {
         nama: "Rapaa",
@@ -15,7 +16,8 @@ const members = [
         ulangTahun: "Tiap hari",
         kelebihan: "IPK 4.0",
         kekurangan: "gk ada (terlalu aura maxing)",
-        badge: ["🔥 Einstein"]
+        badge: ["🔥 Einstein"],
+        instagram: "https://instagram.com/username_budi"
     },
     {
         nama: "Firas",
@@ -24,7 +26,8 @@ const members = [
         ulangTahun: "gk tau nigger",
         kelebihan: "Kesayangan Bronya",
         kekurangan: "gk ada",
-        badge: ["🔥 No.1 Bronya Lover"]
+        badge: ["🔥 No.1 Bronya Lover"],
+        instagram: "https://instagram.com/username_budi"
     },
     {
         nama: "Darren",
@@ -33,7 +36,8 @@ const members = [
         ulangTahun: "gk tau nigger",
         kelebihan: "Penyelamat warga Bdg",
         kekurangan: "Jarang nongol di kelas",
-        badge: ["🔥 No.1 Lifesaver <3", "🔥 120 TAK"]
+        badge: ["🔥 No.1 Lifesaver <3", "🔥 120 TAK"],
+        instagram: "https://instagram.com/username_budi"
     },
     {
         nama: "Kepin",
@@ -42,7 +46,8 @@ const members = [
         ulangTahun: "kepo nigger",
         kelebihan: "berat badan",
         kekurangan: "mukanya kekurangan",
-        badge: ["🔥 Nigger"]
+        badge: ["🔥 Nigger"],
+        instagram: "https://instagram.com/username_budi"
     },
     {
         nama: "Azmii",
@@ -51,16 +56,18 @@ const members = [
         ulangTahun: "gk tau nigger",
         kelebihan: "Roblok + aktif organisasi",
         kekurangan: "Roblok",
-        badge: ["🔥 Roblok", "🔥 120 TAK"]
+        badge: ["🔥 Roblok", "🔥 120 TAK"],
+        instagram: "https://instagram.com/username_budi"
     },
     {
         nama: "Abian",
         foto: "src/assets/member7.png",
         hobi: "Gooning + doomscroll",
         ulangTahun: "gk tau nigger",
-        kelebihan: "nigga know a lot of ball (due to doomscroll addictive",
-        kekurangan: "kuning-kuning (kuliah gooning)",
-        badge: ["🔥 Elite Ball Knowledge"]
+        kelebihan: "nigga know a lot of ball (due to doomscroll addictive)",
+        kekurangan: "kuning-kuning aka kuliah gooning (tiap abis matkul ilang mulu nigger)",
+        badge: ["🔥 Elite Ball Knowledge"],
+        instagram: "https://instagram.com/username_budi"
     },
     {
         nama: "Fathan",
@@ -69,7 +76,8 @@ const members = [
         ulangTahun: "gk tau nigger",
         kelebihan: "Jago gambar",
         kekurangan: "gk ada jir, terlalu wow bgt",
-        badge: ["🔥 God of Artist"]
+        badge: ["🔥 God of Artist"],
+        instagram: "https://instagram.com/username_budi"
     }
 ];
 

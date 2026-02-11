@@ -3,17 +3,50 @@ import members from "../data/members";
 
 function Home() {
   return (
-    <div className="max-w-6xl mx-auto px-5 pt-28 pb-16">
-      <h1 className="text-4xl font-bold mb-12 text-white">
-        Member SIGERS
-      </h1>
+    <div className="relative overflow-hidden">
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-        {members.map((m, index) => (
-          <div key={index} className="flex justify-center">
-            <MemberCard member={m} />
+      <section
+        className="w-full h-[625px] flex items-center justify-center text-center relative -mt-20"
+        style={{
+          backgroundImage: "url('src/assets/sigers-bubat.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center"
+        }}
+      >
+        <div className="absolute inset-0 bg-black/60"></div>
+
+        <div className="relative z-10 max-w-3xl px-6">
+          <h1 className="text-5xl font-extrabold text-white mb-4">
+            SIGERS Bojongsoang
+          </h1>
+          <p className="text-zinc-200 text-lg">
+            Kumpulan member SIGERS yang penuh kejomokan (yapi doang sih kalo ini wkwk)
+          </p>
+        </div>
+      </section>
+
+      <div className="relative pt-12 pb-16">
+
+        <div className="absolute top-1 left-0 w-screen overflow-hidden opacity-10 pointer-events-none">
+          <div className="marquee-text text-[140px] font-extrabold text-white whitespace-nowrap">
+            OUR MEMBERS &nbsp; OUR MEMBERS &nbsp; OUR MEMBERS &nbsp; OUR MEMBERS &nbsp; OUR MEMBERS
           </div>
-        ))}
+        </div>
+
+        <div className="max-w-6xl mx-auto px-5 relative z-10">
+          <h1 className="text-4xl font-bold mb-12 text-white">
+            Member SIGERS
+          </h1>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+            {members.map((m, index) => (
+              <div key={index} className="flex justify-center">
+                <MemberCard member={m}/>
+              </div>
+            ))}
+          </div>
+        </div>
+
       </div>
     </div>
   );
