@@ -2,6 +2,16 @@ html {
   scroll-behavior: smooth;
 }
 
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradientMove {
+  animation: gradientMove 18s ease infinite;
+}
+
 .home-container {
   max-width: 1200px;
   margin: auto;
@@ -18,7 +28,6 @@ html {
   display: flex;
 }
 
-/* desktop zigzag */
 .member-row.left {
   justify-content: flex-start;
 }
@@ -49,3 +58,30 @@ html {
   animation: marquee 20s linear infinite;
 }
 
+body::after{
+  content:"";
+  position:fixed;
+  inset:0;
+  background:url("https://grainy-gradients.vercel.app/noise.svg");
+  opacity:.08;
+  pointer-events:none;
+  z-index:-1;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn .35s ease forwards;
+}
+
+.animate-scaleIn {
+  animation: scaleIn .4s ease forwards;
+}

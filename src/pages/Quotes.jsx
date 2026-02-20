@@ -1,24 +1,39 @@
 function Quotes() {
   return (
-    <div className="min-h-screen flex items-center justify-center px-6 py-20">
-      <div className="max-w-3xl w-full text-center">
-        <div className="relative">
+    <div className="relative min-h-screen flex items-center justify-center px-6 py-20 text-white overflow-hidden">
+      <div className="relative max-w-4xl md:max-w-6xl w-full text-center z-10">
+        <div className="relative group rounded-3xl overflow-hidden shadow-2xl">
           <img
             src="src/assets/fotbar.jpg"
             alt="Fotbar"
-            className="w-full max-h-[420px] object-cover rounded-2xl shadow-xl"
+            className="
+              w-full 
+              max-h-[380px] 
+              md:max-h-[600px] 
+              object-cover 
+              transition-all duration-700 
+              group-hover:scale-105
+            "
           />
-          <div className="absolute inset-0 bg-black/40 rounded-2xl"></div>
-
-          <div className="absolute inset-0 flex items-center justify-center px-6">
-            <blockquote className="text-white font-bold text-2xl md:text-3xl leading-snug drop-shadow-lg">
-              "PAK DONI KAPAN ACC KRSNYAAAAAA"
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/20"></div>
+          <div className="absolute inset-0 flex items-center justify-center px-6 md:px-12">
+            <blockquote className="
+              text-white 
+              font-extrabold 
+              text-xl 
+              md:text-4xl 
+              leading-snug 
+              drop-shadow-2xl 
+              transition-all duration-700 
+              group-hover:scale-105
+            ">
+              PAK, KAPAN ACC KRSNYAAAAAA
             </blockquote>
           </div>
         </div>
 
-        <p className="text-zinc-300 mt-6 text-sm italic">
-          - suara hati dari kami pejuang 3.5 semesters
+        <p className="text-zinc-400 mt-8 text-sm tracking-wide italic">
+          — suara hati dari kami pejuang 3.5 semesters
         </p>
 
       </div>

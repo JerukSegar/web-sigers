@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 function Navbar() {
@@ -13,6 +13,13 @@ function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const navItemClass = ({ isActive }) =>
+    `transition relative ${
+      isActive
+        ? "text-white font-semibold"
+        : "text-zinc-300 hover:text-white"
+    }`;
+
   return (
     <nav
       className={`
@@ -23,16 +30,30 @@ function Navbar() {
       `}
     >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
-        <h1 className={`text-white font-bold transition-all ${scrolled ? "text-lg" : "text-xl"}`}>
+        <h1
+          className={`text-white font-bold transition-all ${
+            scrolled ? "text-lg" : "text-xl"
+          }`}
+        >
           SIGERS
         </h1>
 
         <div className="flex gap-6 text-sm">
-          <Link to="/" className="text-zinc-300 hover:text-white transition">Home</Link>
-          <Link to="/gallery" className="text-zinc-300 hover:text-white transition">Foto Aib</Link>
-          <Link to="/world-record" className="text-zinc-300 hover:text-white transition">World Record</Link>
-          <Link to="/about" className="text-zinc-300 hover:text-white transition">About</Link>
-          <Link to="/quotes" className="text-zinc-300 hover:text-white transition">Quotes</Link>
+          <NavLink to="/" end className={navItemClass}>
+            Home
+          </NavLink>
+          <NavLink to="/gallery" className={navItemClass}>
+            Foto Aib
+          </NavLink>
+          <NavLink to="/world-record" className={navItemClass}>
+            World Record
+          </NavLink>
+          <NavLink to="/about" className={navItemClass}>
+            About
+          </NavLink>
+          <NavLink to="/quotes" className={navItemClass}>
+            Quotes
+          </NavLink>
         </div>
       </div>
     </nav>

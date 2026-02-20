@@ -4,6 +4,12 @@ function WorldRecord() {
   return (
     <div className="max-w-6xl mx-auto px-5 pt-28 pb-16">
       
+      <div className="absolute top-10 left-0 w-screen overflow-hidden opacity-10 pointer-events-none">
+        <div className="marquee-text text-[140px] font-extrabold text-white whitespace-nowrap">
+          WORLD RECORD &nbsp; WORLD RECORD &nbsp; WORLD RECORD &nbsp; WORLD RECORD &nbsp; WORLD RECORD
+        </div>
+      </div>
+
       <h1 className="text-4xl font-bold text-white text-center mb-14">
         World Record SIGERS
       </h1>
